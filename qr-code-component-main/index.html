@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/icon.png">
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | QR code</title>
+
+  <style>
+    :root {
+      --c-white: hsl(0, 0%, 100%);
+      --c-lightgray: hsl(212, 45%, 89%);
+      --c-grayishblue: hsl(220, 15%, 55%);
+      --c-darkblue: hsl(218, 44%, 22%);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+    }
+
+    body {
+      background-color: var(--c-lightgray);
+      font-family: "Outfit", sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .card {
+      background-color: var(--c-white);
+      width: 320px;
+      height: 497px;
+      padding: 16px;
+      border-radius: 20px;
+    }
+
+    .card-text {
+      text-align: center;
+      padding: 0 16px;
+    }
+
+    .text-title {
+      color: var(--c-darkblue);
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .text-paragraph {
+      color: var(--c-grayishblue);
+      font-size: 15px;
+      margin-top: 16px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="card">
+    <img src="./images/image-qr-code.png" alt="qr-image">
+    <div class="card-text">
+      <p class="text-title">Improve your front-end skills by building projects</p>
+      <p class="text-paragraph">
+        Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
