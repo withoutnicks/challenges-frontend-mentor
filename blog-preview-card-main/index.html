@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/icon.png">
+
+  <title>Frontend Mentor | Blog card</title>
+
+  <style>
+    :root {
+      --primary: hsl(47, 88%, 63%);
+      --white: hsl(0, 0%, 100%);
+      --grey: hsl(0, 0%, 50%);
+      --black: hsl(0, 0%, 7%);
+    }
+
+    * {
+      margin: 0;
+      box-sizing: border-box;
+      font-family: "Figtree", sans-serif;
+    }
+
+    body {
+      background-color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      user-select: none;
+
+      & .card {
+        background-color: var(--white);
+        width: 384px;
+        padding: 1.5rem;
+        border-radius: 1.25rem;
+        display: inherit;
+        flex-direction: column;
+        border: 1px solid var(--black);
+        box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+
+        & img{
+          width: 100%;
+          border-radius: 0.625rem;
+          margin-bottom: 1.5rem;
+        }
+
+        & .content {
+          display: inherit;
+          flex-direction: column;
+          gap: 0.75rem;
+          margin-bottom: 1.5rem;
+
+          & .tag {
+            background-color: var(--primary);
+            width: fit-content;
+            font-weight: bold;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.25rem;
+          }
+
+          & .title {
+            font-size: 1.5rem;
+            font-weight: 800;
+
+            &:hover {
+              color: var(--primary);
+            }
+          }
+
+          & .paragraph {
+            font-weight: 500;
+            color: var(--grey);
+          }
+        }
+
+        & .footer {
+          display: inherit;
+          align-items: center;
+          gap: 0.75rem;
+          
+
+          & img {
+            width: 2rem;
+            margin: 0;
+          }
+
+          & .user {
+            font-weight: 700;
+            font-size: 0.875rem;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 375px){
+      body .card {
+        width: 327px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="card">
+    <picture>
+      <img src="images/illustration-article.svg" alt="picture card">
+    </picture>
+    <article class="content">
+      <div class="tag">Learning</div>
+      <p class="date">Published 21 Dec 2023</p>
+      <p class="title">HTML & CSS foundations</p>
+      <p class="paragraph">
+        These languages are the backbone of every website,
+        defining structure, content, and presentation
+      </p>
+    </article>
+    <footer class="footer">
+      <img src="./images/image-avatar.webp" alt="avatar card">
+      <p class="user">Greg Hooper</p>
+    </footer>
+  </section>
+</body>
+
+</html>
